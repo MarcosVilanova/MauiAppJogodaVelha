@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MeuJogodaVelha.MainPage"
+             BackgroundColor="Navy">
+
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="RoyalBlue"/> 
+            <Setter Property="CornerRadius" Value="10"/> 
+            <Setter Property="TextColor" Value="Snow"/> 
+            <Setter Property="FontSize" Value="100"/>
+            <Setter Property="BorderWidth" Value="3.5"/>
+            <Setter Property="BorderColor" Value="red"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <Grid RowDefinitions="*,*,*,*" ColumnDefinitions="*,*,*" RowSpacing="10" ColumnSpacing="10" Margin="40">
+        <Image Source="logo_jogo_da_velha.png" Grid.Row="0" Grid.Column="1" WidthRequest="200" HeightRequest="200"/>
+
+        <Button x:Name="btn10"  Grid.Row="1" Grid.Column="0" Clicked="Button_Clicked"/>
+        <Button x:Name="btn11"  Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked"/>
+        <Button x:Name="btn12"  Grid.Row="1" Grid.Column="2" Clicked="Button_Clicked"/>
+
+        <Button x:Name="btn20" Grid.Row="2" Grid.Column="0" Clicked="Button_Clicked"/>
+        <Button x:Name="btn21" Grid.Row="2" Grid.Column="1" Clicked="Button_Clicked"/>
+        <Button x:Name="btn22" Grid.Row="2" Grid.Column="2" Clicked="Button_Clicked"/>
+
+        <Button x:Name="btn30" Grid.Row="3" Grid.Column="0" Clicked="Button_Clicked"/>
+        <Button x:Name="btn31" Grid.Row="3" Grid.Column="1" Clicked="Button_Clicked"/>
+        <Button x:Name="btn32" Grid.Row="3" Grid.Column="2" Clicked="Button_Clicked"/>
+    </Grid>
+   
+    
+</ContentPage>
